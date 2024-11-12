@@ -5,8 +5,8 @@
  <h2>📸 Project Demo</h2>
  <p>A quick preview of the playlist interface with integrated video playback.</p>
 
-![Zight Recording 2024-10-14 at 09 38 34 PM](https://github.com/user-attachments/assets/f049a9e7-6597-4897-a959-ab2e2a8ea1e3)
 
+![playList](https://github.com/user-attachments/assets/1b990915-2f91-4de8-abc7-6fe8d838a543)
 
 
 <h2>🛠️ Technologies Used</h2>
