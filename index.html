@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play List</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Icon Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Music Home -->
+    <div class="music-player">
+      <!-- Playlist -->
+      <button id="playlist">
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+      <!-- Singer Picture -->
+      <img src="assets/ahmet-kaya.jpg" id="song-image" />
+      <!-- Song Detail -->
+      <div class="song-details">
+        <p id="song-name">Şiire Gazele</p>
+        <p id="song-artist">Ahmet Kaya</p>
+      </div>
+      <!-- Playback Options -->
+      <div class="player-options">
+        <button id="shuffle"><i class="fa-solid fa-shuffle"></i></button>
+        <button id="prev"><i class="fa-solid fa-backward-step"></i></button>
+        <button id="play"><i class="fa-solid fa-play"></i></button>
+        <button id="pause" class="hide">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button id="next"><i class="fa-solid fa-forward-step"></i></button>
+        <button id="repeat"><i class="fa-solid fa-repeat"></i></button>
+      </div>
+      <!-- Sound -->
+      <audio id="audio" preload="metadata"></audio>
+      <div id="progress-bar"><div id="current-progress"></div></div>
+      <!-- Time -->
+      <div class="time-container">
+        <span id="current-time">01:12</span>
+        <span id="max-duration">03:24</span>
+      </div>
+      <!-- Song List -->
+      <div id="playlist-container">
+        <button id="close-button"><i class="fa-solid fa-xmark"></i></button>
+        <ul id="playlist-songs"></ul>
+      </div>
+    </div>
+    <!-- Javascript Link -->
+    <script src="script.js"></script>
+  </body>
+</html>
